@@ -1,0 +1,32 @@
+.group {
+    margin-top: 20px;
+    &_item{
+        padding: 20px;
+        background-color: azure;
+        margin-bottom: 10px;
+        text-align: center;
+        border-radius:  10px 0px 0px 10px;
+        border: 1px solid black;
+        border-right:none;
+
+        &_active{
+            background-color:antiquewhite ;
+        }
+
+        &_edit_icon{
+            float:right
+        }
+    }
+
+    &_new{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;  
+        &_add_icon{
+            background: border-box;
+            padding-right: 10px;
+        }   
+    }
+}

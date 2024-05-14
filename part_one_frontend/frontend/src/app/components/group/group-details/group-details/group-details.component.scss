@@ -1,0 +1,20 @@
+.group_details{
+    &_content{
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between      ;
+    }
+
+    &_items{
+        padding: 20px;
+
+        div{
+            padding: 10px;
+            border-bottom: 3px solid grey;
+            &_odd{
+                background-color: azure;
+            }
+        }
+    }
+}

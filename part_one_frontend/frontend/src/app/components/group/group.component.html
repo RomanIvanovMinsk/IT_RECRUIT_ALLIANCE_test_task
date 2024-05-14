@@ -1,1 +1,24 @@
-<p>group works!</p>
+<div class="group">
+    <div 
+        *ngFor="let item of groups"
+        class="group_item" 
+        [ngClass]="{group_item_active: item.isActive}"
+        (click)="setActive(item)"
+        >
+       <span *ngIf="!item.isEdit">{{ item.Name  }}</span>
+       <input [(ngModel)]="item.Name" *ngIf="item.isEdit" (blur)="lostFocus($event, item)"/>
+       <span 
+            *ngIf="item.isActive && !item.isEdit"
+            class="group_item_edit_icon"
+            (click)="setEdit(item)"
+            >
+        <img src="../../../assets/icons8-edit-26.png" />
+       </span>
+    </div>
+    <div class="group_new" (click)="addNewGroup()">
+        <span class="group_new_add_icon">
+            <img src="../../../assets/icons8-add-30.png" />
+        </span>
+        <span>Add new Group </span>
+    </div>
+</div>

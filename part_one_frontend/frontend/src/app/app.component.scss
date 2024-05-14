@@ -1,0 +1,35 @@
+.main{
+    background:
+        repeating-linear-gradient(
+        transparent,transparent 20px, yellowgreen 22px
+        ),
+        repeating-linear-gradient(
+        90deg,
+        transparent,transparent 20px, yellowgreen 22px
+        );
+    width: 100%;
+    height: 100%;
+    &_permissions {
+        padding: 20px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid black;
+    }
+    &_content{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        min-height: 1024px;
+        &_left-side{
+            min-width: 320px;
+            flex:1;
+            margin-top: 10px;
+            border-right: 3px solid black;
+        }
+
+        &_right-side{
+            flex: 4;
+            min-width:320px;
+        }
+    } 
+}

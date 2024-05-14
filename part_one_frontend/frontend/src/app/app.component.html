@@ -1,9 +1,12 @@
-
 <main class="main">
-  <div class="content">
-    <div class="left-side"></div>
-    <div class="divider" role="separator" aria-label="Divider"></div>
-    <div class="right-side"></div>
+  <div class="main_permissions">Permissions</div>
+  <div class="main_content">
+    <div class="main_content_left-side">
+      <app-group (groupChanged)="setActiveRoles($event)"></app-group>
+    </div>
+    <div class="main_content_right-side">
+      <app-group-details [group_roles]="activeRoles" ></app-group-details>
+    </div>
   </div>
 </main>
 <router-outlet />
