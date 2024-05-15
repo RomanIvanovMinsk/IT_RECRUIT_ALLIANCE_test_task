@@ -30,5 +30,6 @@ export class GroupService {
   update(item: Group){
     let oldVal = this.groups.filter(x => x.id == item.id)[0];
     oldVal.Name = item.Name;
+    oldVal.Roles = item.Roles;
   }
 }

@@ -1,16 +1,16 @@
-<div class="group_details">
+<div class="group_details" *ngIf="activeGroupId">
     <div class="group_details_content">
        <span class="group_details_content_title">Roles</span>
        <span class="group_details_content_search">
-         Here will be search
+          <app-search  (filter)="doFiltering($event)"></app-search>
        </span>
        <span class="group_details_content_selector">
          Here will be selector
        </span>
     </div>
     <div class="group_details_items">
-        <div *ngFor="let item of _roles">
-             <input type="checkbox" [(ngModel)]="item.isChecked" /> {{item.Name}}
+        <div *ngFor="let item of _roles | filter : filterText">
+             <input type="checkbox" [(ngModel)]="item.isChecked" (ngModelChange)="updateGroupRole()"/> {{item.Name}}
         </div>
     </div>
 </div>
