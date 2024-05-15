@@ -1,13 +1,3 @@
-# Frontend
+So lads you could see requirements in folder requirements and compare what I get in a couple of days.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## we are mot running test for test project at least at start
+After I got rejected almost done the test task by the way I stop working on the task but maybe it will help someone else.
